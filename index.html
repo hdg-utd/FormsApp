@@ -1,76 +1,22 @@
 <!doctype html>
-<html ng-app="app">
+<html>
 <head>
     <title>Citizenship Form</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
-    <div class="container">
-        <form>
-            <!-- Part 1 Name -->
-            <div id="name" class="form">
-                <h1 class="form-title"><span>C</span>itizenship</h1>
-                <div class="form-content">
-                    <div class="header">
-                        <h1>What is your name?</h1>
-                    </div>
-                    <div class="form-fields">
-                        <input type="text" placeholder="First Name" class="normal-input"><br>
-                        <input type="text" placeholder="Middle Name" class="normal-input"><br>
-                        <input type="text" placeholder="Last Name" class="normal-input">
-                    </div>
-                    <div class="forward-button">
-                        <button class="btn btn-success">Next ></button>
-                    </div>
-                    <div class="contact">
-                        <h3>Questions? <span><a href="#">Contact US</a></span></h3>
-                    </div>
-                </div>
-            </div>
-            <!-- Part 2 About You -->
-            <div id="about-you" class="form">
-                <h1 class="form-title"><span>Ci</span>tizenship</h1>
-                <div class="form-content">
-                    <div class="header">
-                        <h1>About You</h1>
-                    </div>
-                    <div class="form-fields">
-                        <div class="label-input">
-                            <label>Date of Birth</label><br>
-                            <input type="text" placeholder="Day" class="small-input">
-                            <input type="text" placeholder="Month" class="small-input">
-                            <input type="text" placeholder="Year" class="small-input">
-                        </div>
-                        <div class="label-input">
-                            <label>Gender</label><br>
-                            <input type="radio" name="gender" value="male"><span class="radio-label">Male</span>
-                            <input type="radio" name="gender" value="female"><span class="radio-label">Female</span>
-                        </div>
-                        <div class="label-input" id="country-div">
-                            <label>Country of Nationality</label><br>
-                            <input type="text" placeholder="Country" class="normal-input">
-                        </div>
-                    </div>
-                    <div class="forward-button">
-                        <button class="btn btn-success">Next ></button>
-                    </div>
-                    <div class="contact">
-                        <h3>Questions? <span><a href="#">Contact US</a></span></h3>
-                    </div>
-                </div>
-            </div>
-            <!-- Part 3 Contact -->
-            <div id="contact" class="form">
-                <h1 class="form-title"><span>Citizenshi</span>p</h1>
-            </div>
+<body  ng-app="app">
+    <div class="container" ng-controller="FormController">
+        <form name="user">
+            <div ui-view></div>
         </form>
     </div>
     
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="formController.js"></script>
 </body>
 </html>

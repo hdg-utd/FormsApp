@@ -1,0 +1,32 @@
+<!-- Part 2 About You -->
+<div id="about-you" class="form">
+    <h1 class="form-title"><span>Ci</span>tizenship</h1>
+    <div class="form-content">
+        <div class="header">
+            <h1>About You</h1>
+        </div>
+        <div class="form-fields">
+            <div class="label-input">
+                <label>Date of Birth</label><br>
+                <input type="text" placeholder="Day" class="small-input" ng-model="user.birthDay">
+                <input type="text" placeholder="Month" class="small-input" ng-model="user.birthMonth">
+                <input type="text" placeholder="Year" class="small-input" ng-model="user.birthYear">
+            </div>
+            <div class="label-input">
+                <label>Gender</label><br>
+                <input type="radio" name="gender" value="male"><span class="radio-label">Male</span>
+                <input type="radio" name="gender" value="female"><span class="radio-label">Female</span>
+            </div>
+            <div class="label-input" id="country-div">
+                <label>Country of Nationality</label><br>
+                <input type="text" placeholder="Country" class="normal-input">
+            </div>
+        </div>
+        <div class="forward-button">
+            <button class="btn btn-success">Next ></button>
+        </div>
+        <div class="contact">
+            <h3>Questions? <span><a target="_blank" href="https://www.fastvisa.us/">Contact US</a></span></h3>
+        </div>
+    </div>
+</div>
