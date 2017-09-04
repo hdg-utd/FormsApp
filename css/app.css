@@ -19,6 +19,14 @@
     font-size: 22px;
 }
 
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+    box-shadow: 0 0 10px red;
+}
+input.ng-valid {
+    border: 1px solid skyblue;
+}
+
 body {
     background-color: #215599;
 }

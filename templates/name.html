@@ -6,12 +6,12 @@
             <h1>What is your name?</h1>
         </div>
         <div class="form-fields">
-            <input type="text" placeholder="First Name" class="normal-input" ng-model="user.firstName"><br>
-            <input type="text" placeholder="Middle Name" class="normal-input" ng-model="user.middleName"><br>
-            <input type="text" placeholder="Last Name" class="normal-input" ng-model="user.lastName">
+            <input type="text" placeholder="First Name" class="normal-input" ng-model="user.firstName" required><br>
+            <input type="text" placeholder="Middle Name" class="normal-input" ng-model="user.middleName" required><br>
+            <input type="text" placeholder="Last Name" class="normal-input" ng-model="user.lastName" required>
         </div>
         <div class="forward-button">
-            <button class="btn btn-success" ng-click="nameDone()">Next ></button>
+            <button class="btn btn-success" ng-click="nameDone()" ng-disabled="user.$invalid">Next ></button>
         </div>
         <div class="contact">
             <h3>Questions? <span><a target="_blank" href="https://www.fastvisa.us/">Contact US</a></span></h3>
