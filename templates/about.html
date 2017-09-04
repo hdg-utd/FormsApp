@@ -7,23 +7,25 @@
         </div>
         <div class="form-fields">
             <div class="label-input">
-                <label>Date of Birth</label><br>
-                <input type="text" placeholder="Day" class="small-input" ng-model="user.birthDay">
-                <input type="text" placeholder="Month" class="small-input" ng-model="user.birthMonth">
-                <input type="text" placeholder="Year" class="small-input" ng-model="user.birthYear">
+                <label>Date of Birth</label><span class="invalid-date" ng-if="!dateIsValid">(Enter a Valid Date)</span><br>
+                <input type="number" min="1" max="31" placeholder="Day" class="small-input" ng-model="user.birthDay">
+                <select ng-model="user.birthMonth" ng-options="month for month in monthList" required>
+                    <option value="" disabled selected>(Month)</option>
+                </select>
+                <input type="number" min="1917" max="2017" placeholder="Year" class="small-input" ng-model="user.birthYear"><br>
             </div>
             <div class="label-input">
                 <label>Gender</label><br>
-                <input type="radio" name="gender" value="male"><span class="radio-label">Male</span>
-                <input type="radio" name="gender" value="female"><span class="radio-label">Female</span>
+                <input type="radio" name="gender" value="male"><span class="radio-label" ng-model="user.gender">Male</span>
+                <input type="radio" name="gender" value="female"><span class="radio-label" ng-model="user.gender">Female</span>
             </div>
             <div class="label-input" id="country-div">
                 <label>Country of Nationality</label><br>
-                <input type="text" placeholder="Country" class="normal-input">
+                <input type="text" placeholder="Country" class="normal-input" ng-model="user.country" required>
             </div>
         </div>
         <div class="forward-button">
-            <button class="btn btn-success">Next ></button>
+            <button class="btn btn-success" ng-click="aboutDone()" ng-disabled="user.$invalid">Next ></button><br>
         </div>
         <div class="contact">
             <h3>Questions? <span><a target="_blank" href="https://www.fastvisa.us/">Contact US</a></span></h3>
