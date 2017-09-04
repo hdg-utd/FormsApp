@@ -1,0 +1,71 @@
+body {
+    background-color: #215599;
+}
+
+
+@media (min-width: 400px) {
+    .container {
+        width: 50%;
+        padding: 0px;
+    }
+    
+    form div {
+        background-color: white;
+        margin-top: 35px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .header h1 {
+        text-align: center;
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #254875;
+    }
+    
+    .form-fields {
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    .form-fields input {
+        margin-bottom: 30px;
+        width: 70%;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding: 15px;
+        border: 0px;
+    }
+    
+    
+    /* do not group these rules */
+    *::-webkit-input-placeholder {
+        color: lightgray;
+    }
+    *:-moz-placeholder {
+        /* FF 4-18 */
+        color: lightgray;
+    }
+    *::-moz-placeholder {
+        /* FF 19+ */
+        color: lightgray;
+    }
+    *:-ms-input-placeholder {
+        /* IE 10+ */
+        color: lightgray;
+    }
+    
+    .contact {
+        text-align: center;
+        padding: 5px 0px;
+        margin-top: 0px;
+        background-color: #e3e3e3;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .contact h3 span {
+        color: #215599;
+        font-weight: bold;
+    }
+}
