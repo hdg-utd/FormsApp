@@ -40,11 +40,11 @@ body {
         color: white;
     }
     
-    form div {
+    .form-content {
         background-color: white;
         margin-top: 35px;
         border-radius: 20px;
-        font-size: 20px;
+        font-size: 22px;
     }
     
     .header h1 {
@@ -63,7 +63,7 @@ body {
         margin-top: 0px;
     }
     
-    #name .form-fields input {
+    .normal-input {
         margin-bottom: 30px;
         width: 70%;
         background-color: #f5f5f5;
@@ -89,5 +89,51 @@ body {
     .contact h3 span {
         color: #215599;
         font-weight: bold;
+    }
+    
+    .form-fields label {
+        color: #6d6a6a;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .forward-button {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+    .forward-button button {
+        width: 70%;
+        font-size: 22px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    #about-you .label-input {
+        margin-bottom: 30px;
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    .small-input {
+        width: 30%;
+        border-radius: 5px;
+        border: 0px;
+        background-color: #f5f5f5;
+        padding: 15px;
+    }
+    
+    input[type=radio] {
+        margin-top: -1px;
+        vertical-align: middle;
+    }
+    
+    .radio-label {
+        color: #6d6a6a;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    
+    #country-div input {
+        width: 100%;
     }
 }
