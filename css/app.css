@@ -153,4 +153,28 @@ body {
     #country-div input {
         width: 100%;
     }
+    
+    #contact .form-fields {
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    #contact .form-fields input {
+        width: 100%;
+    }
+    
+    #results h1 {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    
+    #results .form-content {
+        padding: 50px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    #results label {
+        color: #adaaaa;
+        width: 200px;
+    }
 }

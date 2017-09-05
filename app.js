@@ -5,7 +5,13 @@ var citizenshipApp = angular.module('app', ['ui.router']).config(function($state
     }).state('about', {
         url: '/about',
         templateUrl: 'templates/about.html'
-    });
+    }).state('contact', {
+        url: '/contact',
+        templateUrl: 'templates/contact.html'
+    }).state('results', {
+        url: '/results',
+        templateUrl: 'templates/results.html'
+    })
     
     $urlRouterProvider.otherwise('/name');
 })

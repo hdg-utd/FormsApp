@@ -18,6 +18,11 @@ citizenshipApp.controller('FormController', function($scope, $location) {
             $location.path('/contact');
         }
     }
+    
+    $scope.contactDone = function(user) {
+        $scope.user = user;
+        $location.path('/results');
+    }
 });
 
 function dateValidator(day, month, year) {

@@ -1,0 +1,22 @@
+<div id="contact" class="form">
+    <h1 class="form-title"><span>Citizenshi</span>p</h1>
+    <div class="form-content">
+        <div class="header">
+            <h1>Contact</h1>
+        </div>
+        <div class="form-fields">
+            <label>Phone Number</label><br>
+            <input type="number" placeholder="(___)___-____" ng-minlength="10" ng-maxlength="10" class="normal-input" ng-model="user.phone" required><br>
+            <label>Email Address</label><br>
+            <input type="email" placeholder="Email" class="normal-input" ng-model="user.email" required><br>
+            <label>Home Address</label><br>
+            <input type="text" placeholder="Address" class="normal-input" ng-model="user.address" required>
+        </div>
+        <div class="forward-button">
+            <button class="btn btn-success" ng-click="contactDone(user)" ng-disabled="user.$invalid">Submit</button>
+        </div>
+        <div class="contact">
+            <h3>Questions? <span><a target="_blank" href="https://www.fastvisa.us/">Contact US</a></span></h3>
+        </div>
+    </div>
+</div>
