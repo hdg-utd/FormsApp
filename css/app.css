@@ -261,8 +261,9 @@ body {
     }
     
     .contact h3 {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 40px;
     }
     
     .contact h3 span {
@@ -273,6 +274,7 @@ body {
     .form-fields label {
         color: #6d6a6a;
         font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
     }
     
     .forward-button {
@@ -287,9 +289,9 @@ body {
     }
     
     #about-you .label-input {
-        margin-bottom: 30px;
-        width: 70%;
-        margin-left: 15%;
+        margin-bottom: 60px;
+        width: 90%;
+        margin-left: 5%;
     }
     
     #about-you .invalid-date {
@@ -319,6 +321,7 @@ body {
         font-family: 'Open Sans', sans-serif;
         margin-left: 20px;
         margin-right: 10px;
+        font-size: 30px;
     }
     
     #country-div input {
@@ -326,12 +329,22 @@ body {
     }
     
     #contact .form-fields {
-        width: 70%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 5%;
     }
     
     #contact .form-fields input {
         width: 100%;
+    }
+    
+    #results .form-content {
+        font-size: 30px;
+    }
+    
+    #results .form-content label {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 10px;
     }
     
     #results h1 {
